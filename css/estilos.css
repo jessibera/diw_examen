@@ -1,0 +1,25 @@
+#cabecera{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25em;
+}
+
+#descripcion{
+    margin: 3em;
+}
+#container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#container div:nth-child(1){
+    float: left;
+}
+#container div:nth-child(2){
+    float: left;
+}
+#container div{
+    margin: 1em;
+}
