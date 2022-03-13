@@ -1,0 +1,12 @@
+/*Declarar variables*/
+$background-color: #AFDDF5;
+$navbar-color: #4854C3;
+
+//Diseñar color página
+body{
+    background-color: $background-color;
+}
+
+nav{
+    background-color: $navbar-color;
+}
