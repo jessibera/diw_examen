@@ -1,10 +1,25 @@
-/*Declarar variables*/
+@charset "UTF-8";
+@font-face {
+  font-family: "Dyslexic";
+  src: url("../css/dislexic/OpenDyslexic_Bold.ttf") format("truetype");
+}
+/*Paleta de colores aplicada en la página web*/
 body {
-  background-color: #AFDDF5;
+  background-color: #334F4F !important;
 }
 
-nav {
-  background-color: #4854C3;
+header {
+  color: #FFC646 !important;
+  background-color: #3E4343 !important;
+}
+
+#headingOne, #headingTwo, #headingThree {
+  color: #FFC646 !important;
+  background-color: #3E4343 !important;
+}
+
+.navbar-brand, .nav-link, .text-center {
+  color: #FFC646 !important;
 }
 
 /*# sourceMappingURL=otros.css.map */

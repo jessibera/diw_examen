@@ -1,25 +1,117 @@
-#cabecera{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 25em;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+/*Tamaño normal de pantalla*/
+body{
+  text-align: justify;
 }
 
-#descripcion{
-    margin: 3em;
-}
-#container{
+nav{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
-#container div:nth-child(1){
-    float: left;
+
+#derecha1{
+  position: absolute;
+  right: 8em;
+  top: 1em;
+  height: 3em;
 }
-#container div:nth-child(2){
-    float: left;
+
+#bandera_en{
+  height: 1em;
 }
-#container div{
+
+#derecha2{
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+#imagen{
+    width: 100%;
+    height: 20em;
+    background-image: url("../img/Platalea\ leucorodia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom 50%;
+}
+
+section{
+  width: 75%;
+  float:left;
+}
+
+aside ul{
+    width: 20%;
     margin: 1em;
+}
+
+footer{
+  clear: both;
+}
+
+/*Función dropdown de traducción*/
+.dropbtn {
+    color: #000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*Accordion*/
+  .accordion {
+    margin: 15px;
+  }
+
+  .accordion .fa {
+    margin-right: 0.2rem;
+  }
+
+  #traductor{
+    width: 10%;
+    float: left;
+  }
+
+  #dislexia{
+    border: 0;
+    outline:none;
+  }
+
+/*Tamaño de tablet*/
+@media (max-width: 768px){
+  section{
+    width: 100%;
+  }
+  
+  aside ul{
+      width: 80%;
+      margin: auto;
+  }
 }

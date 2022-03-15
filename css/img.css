@@ -1,0 +1,15 @@
+#organizacion_1, #organizacion_2{
+    width: 100%;
+    height: 5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#organizacion_1{
+    background-image: url("../img/SGHN.png");
+}
+
+#organizacion_2{
+    background-image: url("../img/Junta_Andalucia.png");
+}

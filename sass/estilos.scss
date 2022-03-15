@@ -1,12 +1,48 @@
-/*Declarar variables*/
-$background-color: #AFDDF5;
-$navbar-color: #4854C3;
-
-//Diseñar color página
-body{
-    background-color: $background-color;
+//importar fuente dislexico
+@font-face {
+    font-family: 'Dyslexic';
+    src: url("../css/dislexic/OpenDyslexic_Bold.ttf") format('truetype');
 }
 
-nav{
-    background-color: $navbar-color;
+//Paleta de colores para invierno
+$background-color: #334F4F;
+$navbar-color: #3E4343;
+$title-color: #3E4343;
+$letter-color: #FFC646;
+
+//Paleta de colores para primavera
+//$background-color: #A74E00;
+//$navbar-color: #0D260A;
+//$title-color: #0D260A;
+//$letter-color: #FFF;
+
+//Paleta de colores para verano
+//$background-color: #A77100;
+//$navbar-color: #00665F;
+//$title-color: #00665F;
+//$letter-color: #FFF;
+
+//Paleta de colores para otoño
+//$background-color: #2F1D0D;
+//$navbar-color: #0D260A;
+//$title-color: #0D260A;
+//$letter-color: #FFF;
+
+/*Paleta de colores aplicada en la página web*/
+body{
+    background-color: $background-color !important;
+}
+
+header{
+    color: $letter-color !important;
+    background-color: $navbar-color !important;
+}
+
+#headingOne, #headingTwo, #headingThree{
+    color: $letter-color !important;
+    background-color: $title-color !important;
+}
+
+.navbar-brand, .nav-link, .text-center{
+    color: $letter-color !important;
 }

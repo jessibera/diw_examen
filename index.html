@@ -9,155 +9,156 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/otros.css" />
+    <link rel="stylesheet" href="css/img.css" />
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/dislexic.js"></script>
     <title>Document</title>
+
 </head>
 <body>
-    <!--HEADER-->
+    <!--ENCABEZADO-->
     <header>
     <!--Menú de navegación-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+    <nav id="navbar" class="navbar navbar-expand-lg ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand" href="#">Limes Platalea</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://limesplatalea.blogspot.com/p/inicio.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Novedades</a>
-              </li>
-              <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                  Limes Platalea
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="http://limesplatalea.blogspot.com/p/descripcion-del-proyecto.html">Descripción del proyecto</a></li>
-                <li><a class="dropdown-item" href="#">Naturaleza, concepto y justificación.</a></li>
-                <li><a class="dropdown-item" href="#">Atalayas. Puntos de observación.</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Limes Wildlife Art</a></li>
-             </ul>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Sobre nosotros</a>
-             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Participantes
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <li><a class="dropdown-item" href="#">Relación de participantes (Campaña 2012)</a></li>
-               <li><a class="dropdown-item" href="#">Relación de participantes (Campaña 2014)</a></li>
-                <li><a class="dropdown-item" href="#">Relación de participantes (Campaña 2016)</a></li>
-               <li><a class="dropdown-item" href="#">Relación de participantes (Campaña 2017)</a></li>
-               <li><a class="dropdown-item" href="#">Relación de participantes (Campaña 2020)</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Documentación</a>
-            </li>
-            <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Dropdown
-               </a>
-               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <li><a class="dropdown-item" href="#">Action</a></li>
-                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                 <li><hr class="dropdown-divider"></li>
-                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-               </ul>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Bibliografía</a>
-            </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Novedades<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Sobre nosotros<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Área de participantes<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Proyecto
+          </a>
+          </li>
+          <li class="nav-item">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="http://limesplatalea.blogspot.com/p/descripcion-del-proyecto.html">Descripción del proyecto</a></li>
+              <li><a class="dropdown-item" href="#">Naturaleza, concepto y justificación.</a></li>
+              <li><a class="dropdown-item" href="#">Atalayas. Puntos de observación.</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Limes Wildlife Art</a></li>
+           </ul>
+          </li>
+          <li id="derecha1">
+            <button><img src="img/ingles.jpg" id="bandera_en" /> | EN</button>
+         </li>
+         <li id="derecha2">
+           <div id="dislexia"></div>
+         </li>
+        </ul>
+      
+      </div>
+    </nav>
+
+  
+
+  <!--IMÁGEN PLATALEA-->
+  <div id="imagen"></div>
+  </header>
+
+  <section>
+    <!--DESCRIPCIÓN DEL PROYECTO-->
+    <div class="accordion">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="card-title">Coordinadores</h5>
+          </div>
+          
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+  
+              <li class="list-group-item text-muted">Coordinadores: Javier Ruiz y Francisco Hortas</li>
+              <li class="list-group-item text-muted">
+                Apoyo científico-técnico: <br/>
+                Francisco Hortas (UCA-SGHN)<br/>
+                Claudine de le Court (Agencia Medio Ambiente y Agua)<br/>
+                Rubén Rodríguez Olivares (Técnico del Equipo de Seguimiento de la Estación Biológica de Doñana)</li>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="card-title">Descripción del proyecto</h5>
+          </div>
+          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <li class="list-group-item text-muted">El nombre del proyecto procede del vocablo latín Limes que define un "camino vigilado por patrullas" y posteriormente delimita las fronteras del Imperio. Así Limes Germanicus, Limes Tripolitanus... al estar en la frontera natural entre Europa y África implica a tres municipios: Chiclana, Conil y Vejer de la Frontera y las patrullas... los "pajareros" que como "atalayeros" estarán “vigilando” en el litoral. Platalea se corresponde con el género de la especie que se pretende “seguir” en este proyecto.
+              Desde finales de Julio hasta mediados de Noviembre se suelen observar grandes bandos de espátulas en la playa de la Barrosa (Chiclana, Cádiz) que se dirigen hacia el sur siguiendo la línea de costa. Los bandos son mixtos (adultos y jóvenes), casi siempre rodando el centenar de individuos. Cabe destacar que se han llegado a censar en un día más de 1000 aves cruzando a la altura del Cabo Roche hacía Marruecos.<br/> 
+              El objetivo de este estudio es cuantificar los efectivos migratorios comparándolos con el conocido contingente Europeo. Se trata de documentar un fenómeno migratorio de importancia excepcional que es además un gran espectáculo visual, con la posibilidad de desarrollar campañas de concienciación y voluntariado en la costa occidental de la Janda principalmente en la playa de la Barrosa.
+          </li>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="vid/1077964409-preview.mp4"></iframe>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="card-title">Puntos fijos de observación</h5>
+          </div>
+          <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <li class="list-group-item text-muted">Puntos fijos de Observación<br/>
+              Atalaya 0: Torre Bermeja<br/>
+              Atalaya 1: Torre del Puerco. Playa La Barrosa. <br/>
+              Atalaya 2: P.D.C. 121.- Hito demarcación de Costas- Frente Hotel Calas de Conil<br/>
+              
+              Atalaya 3: P.D.C. 92 - Hito demarcación de Costas -Frente Cabo Roche <br/>
+              Atalaya 4: Cabo Trafalgar<br/>
+              Atalaya 5: Punta Camarinal</li>
+          <li class="list-group-item text-muted">Fechas, horario de observación y equipos<br/>
+              El horario diario de observación comenzará a las 9:00 h. y concluirá a las 20:00 h. Los equipos tendrán horario de mañana y tarde por lo que habrá dos equipos en cada puesto de observación. El de mañana abarcará el período de 9:00 a 14:00 y el de tarde de 14:00 a 20:00 h.<br/>
+              El período que se pretende cubrir con este proyecto abarca del 20 de julio al 15 de noviembre.
+          </li>
+          <li class="list-group-item text-muted">Recogida de Datos<br/>
+              Variables a registrar: Punto de Observación. Fecha. Observadores. Turno de conteo y horario. Condiciones meteorológicas al comienzo y al final de ese periodo. Bando-Hora de paso. Número de Aves. Composición por Edades. Dirección de vuelo. Distancia de observación respecto a la costa. Formaciones predominantes de vuelo. Otras incidencias reseñables (respuesta a perturbaciones, etc.). Los datos se consignarán en una ficha diseñada para este trabajo y se informatizarán a diario en bases de datos por el coordinador correspondiente.
+          </li>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+  </section>
 
-  <img id="cabecera" src="./img/Platalea leucorodia.jpg" class="img-fluid center w-100" alt="Responsive image">
-
-    </header>
-    
-
-      <!--DESCRIPCIÓN DEL PROYECTO-->
-      <ul id="descripcion" class="list-group list-group-flush">
-        <li class="list-group-item text-muted">Coordinadores: Javier Ruiz y Francisco Hortas</li>
-        <li class="list-group-item text-muted">Apoyo científico-técnico: <br/>
-            Francisco Hortas (UCA-SGHN)<br/>
-            Claudine de le Court (Agencia Medio Ambiente y Agua)<br/>
-            Rubén Rodríguez Olivares (Técnico del Equipo de Seguimiento de la Estación Biológica de Doñana)</li>
-      </ul>
-      <ul id="descripcion" class="list-group list-group-flush">
-        <li class="list-group-item text-muted">El nombre del proyecto procede del vocablo latín Limes que define un "camino vigilado por patrullas" y posteriormente delimita las fronteras del Imperio. Así Limes Germanicus, Limes Tripolitanus... al estar en la frontera natural entre Europa y África implica a tres municipios: Chiclana, Conil y Vejer de la Frontera y las patrullas... los "pajareros" que como "atalayeros" estarán “vigilando” en el litoral. Platalea se corresponde con el género de la especie que se pretende “seguir” en este proyecto.
-            Desde finales de Julio hasta mediados de Noviembre se suelen observar grandes bandos de espátulas en la playa de la Barrosa (Chiclana, Cádiz) que se dirigen hacia el sur siguiendo la línea de costa. Los bandos son mixtos (adultos y jóvenes), casi siempre rodando el centenar de individuos. Cabe destacar que se han llegado a censar en un día más de 1000 aves cruzando a la altura del Cabo Roche hacía Marruecos.<br/> 
-            El objetivo de este estudio es cuantificar los efectivos migratorios comparándolos con el conocido contingente Europeo. Se trata de documentar un fenómeno migratorio de importancia excepcional que es además un gran espectáculo visual, con la posibilidad de desarrollar campañas de concienciación y voluntariado en la costa occidental de la Janda principalmente en la playa de la Barrosa.
-        </li>
-      </ul>
-      <ul id="descripcion" class="list-group list-group-flush">
-        <li class="list-group-item text-muted">Puntos fijos de Observación<br/>
-            Atalaya 0: Torre Bermeja<br/>
-            Atalaya 1: Torre del Puerco. Playa La Barrosa. <br/>
-            Atalaya 2: P.D.C. 121.- Hito demarcación de Costas- Frente Hotel Calas de Conil<br/>
-            
-            Atalaya 3: P.D.C. 92 - Hito demarcación de Costas -Frente Cabo Roche <br/>
-            Atalaya 4: Cabo Trafalgar<br/>
-            Atalaya 5: Punta Camarinal</li>
-        <li class="list-group-item text-muted">Fechas, horario de observación y equipos<br/>
-            El horario diario de observación comenzará a las 9:00 h. y concluirá a las 20:00 h. Los equipos tendrán horario de mañana y tarde por lo que habrá dos equipos en cada puesto de observación. El de mañana abarcará el período de 9:00 a 14:00 y el de tarde de 14:00 a 20:00 h.<br/>
-            El período que se pretende cubrir con este proyecto abarca del 20 de julio al 15 de noviembre.
-        </li>
-        <li class="list-group-item text-muted">Recogida de Datos<br/>
-            Variables a registrar: Punto de Observación. Fecha. Observadores. Turno de conteo y horario. Condiciones meteorológicas al comienzo y al final de ese periodo. Bando-Hora de paso. Número de Aves. Composición por Edades. Dirección de vuelo. Distancia de observación respecto a la costa. Formaciones predominantes de vuelo. Otras incidencias reseñables (respuesta a perturbaciones, etc.). Los datos se consignarán en una ficha diseñada para este trabajo y se informatizarán a diario en bases de datos por el coordinador correspondiente.
-        </li>
-      </ul>
-
-      <!--ASIDE-->
-      <aside>
-
-      </aside>
-      <!--SECTION-->
-      <div id="container">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-      </div>
+   <!--ASIDE-->
+   <aside>   
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" id="headingTwo">Colaboración con</li>
+      <li class="list-group-item" id="organizacion_1"></li>
+      <li class="list-group-item" id="organizacion_2"></li>
+      <li class="list-group-item" id="organizacion_3">Organización 3</li>
+      <li class="list-group-item" id="organizacion_4">Organización 4</li>
+      <li class="list-group-item" id="organizacion_5">Organización 5</li>
+      <li class="list-group-item" id="organizacion_6">Organización 6</li>
+      <li class="list-group-item" id="organizacion_7">Organización 7</li>
+      <li class="list-group-item" id="organizacion_8">Organización 8</li>
+      <li class="list-group-item" id="organizacion_9">Organización 9</li>
+      <li class="list-group-item" id="organizacion_10">Organización 10</li>
+      <li class="list-group-item" id="organizacion_11">Organización 11</li>
+      <li class="list-group-item" id="organizacion_12">Organización 12</li>
+      <li class="list-group-item" id="organizacion_13">Organización 13</li>
+      <li class="list-group-item" id="organizacion_14">Organización 14</li>
+      <li class="list-group-item" id="organizacion_15">Organización 15</li>
+      <li class="list-group-item" id="organizacion_16">Organización 16</li>
+      <li class="list-group-item" id="organizacion_17">Organización 17</li>
+      <li class="list-group-item" id="organizacion_18">Organización 18</li>
+      <li class="list-group-item" id="organizacion_19">Organización 19</li>
+      <li class="list-group-item" id="organizacion_20">Organización 20</li>
+    </ul>
+  </aside>
       
       <!--FOOTER-->
       <div class="container">
